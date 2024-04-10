@@ -1,0 +1,40 @@
+.container {
+    min-height: 100vh;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    /* Add some margin and responsiveness */
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    /* Style the title */
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    /* Style the description text */
+    margin-bottom: 2rem;
+  }
+  
+  .exploreButton {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Style the explore posts button */
+  }
