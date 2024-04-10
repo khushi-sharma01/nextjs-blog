@@ -47,12 +47,13 @@ export const getStaticProps = async ({ params, preview = false }) => {
 
   return {
     props: {
-      post: response?.items?.[0],
+      post: response.items[0], // <-- Note: response?.items?.[0] to response.items[0]
       preview,
       revalidate: 60
     }
   }
 }
+
 
 export const getStaticPaths = async () => {
   const response = await client.getEntries({ content_type: 'post' })
